@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="hangmanApp">
+  <head>
+    <title>Hangman-App</title>
+  </head>
+  <body>
+    <h1>Game Time</h1>
+    <div ng-controller="ctrl1">
+      <span>Val:</span>
+      <input type="text" ng-model="first" />
+      <p>{{first}}</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./hangman.js"></script>
+  </body>
+</html>
