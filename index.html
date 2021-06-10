@@ -6,13 +6,13 @@
   </head>
   <body ng-controller="gameCtrl">
     <div class="gamePage" ng-show="screen == 'initial'">
+      <br />
       <h1>Game Time</h1>
       <div>
-        <h1></h1>
-        <br />
         <h3>The word is: {{secretWord}}</h3>
-        <h3>The word is: {{theWord}}</h3>
+
         <h4>allready Guess: {{incorrectGuess}}</h4>
+        <br />
         <h2 ng-controller="gameCtrl"></h2>
       </div>
 
@@ -34,11 +34,11 @@
     </div>
     <div ng-show="screen == 'won'" class="won">
       <h1>You Won!</h1>
-      <img src="./Happy.gif" class="img" alt="" srcset="" />
+      <img src="./Happy.gif" class="img" />
     </div>
     <div ng-show="screen == 'lost'" class="lost">
       <h1>You Lost!</h1>
-      <img src="./Dead angry.gif" class="img" alt="" srcset="" />
+      <img src="./Dead angry.gif" class="img" />
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="./hangman.js"></script>

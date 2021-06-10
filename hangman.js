@@ -19,7 +19,7 @@ hangmanApp.controller('gameCtrl', [
     };
 
     let newGame = function () {
-      $scope.screen = 'initial';
+      $scope.screen = 'lost';
 
       $scope.incorrectGuess = [];
       $scope.correctGuess = [];

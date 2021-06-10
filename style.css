@@ -1,14 +1,19 @@
 body {
-  background-color: pink;
+  height: 100vh;
+  background-color: wheat;
 }
 .gamePage {
+  /* background-color: rgb(255, 236, 239); */
+  background-image: url('./game_background_by_rafaelrodriz08_d8un0f2-pre.jpg');
+  background-position: center;
+  background-size: cover;
+  color: wheat;
+  font-size: large;
+
   width: 75%;
   margin: auto;
-  height: 100%;
-  margin-top: 15%;
-  border: 1px solid red;
-  align-items: center;
-  align-content: center;
+  border-radius: 5px;
+  margin-top: 10%;
   text-align: center;
 }
 input {
@@ -16,5 +21,27 @@ input {
 }
 img {
   background-color: black;
-  border: solid springgreen;
+  border: solid gold;
+  border-radius: 50%;
+}
+.won,
+.lost {
+  margin: auto;
+  text-align: center;
+}
+.won {
+  color: gold;
+  background-image: url('./stage-podium-lighting-scene-award-260nw-1192357930.webp');
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+.lost {
+  background-image: url('./depositphotos_247342594-stock-video-the-concept-of-a-lost.jpg');
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
 }
