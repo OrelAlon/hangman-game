@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html ng-app="hangmanApp">
+  <link rel="stylesheet" href="./style.css" />
   <head>
     <title>Hangman-App</title>
   </head>
-  <body>
-    <h1>Game Time</h1>
-    <div ng-controller="ctrl1">
-      <span>Val:</span>
-      <input type="text" ng-model="first" />
-      <p>{{first}}</p>
-    </div>
+  <body ng-controller="gameCtrl">
+    <div class="gamePage" ng-show="screen == 'initial'">
+      <h1>Game Time</h1>
+      <div>
+        <h1></h1>
+        <br />
+        <h3>The word is: {{secretWord}}</h3>
+        <h3>The word is: {{theWord}}</h3>
+        <h4>allready Guess: {{incorrectGuess}}</h4>
+        <h2 ng-controller="gameCtrl"></h2>
+      </div>
 
+      <div>
+        <input
+          class="inputLetters"
+          type="text"
+          ng-model="inputL"
+          placeholder="Guess a letter"
+          ng-keyup="$event.keyCode == 13? guess():null"
+        />
+        <br />
+        {{msg}}
+        <br />
+        <button ng-click="guess()">Enter</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <div ng-show="screen == 'won'" class="won">
+      <h1>You Won!</h1>
+      <img src="./Happy.gif" class="img" alt="" srcset="" />
+    </div>
+    <div ng-show="screen == 'lost'" class="lost">
+      <h1>You Lost!</h1>
+      <img src="./Dead angry.gif" class="img" alt="" srcset="" />
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="./hangman.js"></script>
   </body>
