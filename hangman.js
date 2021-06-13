@@ -87,14 +87,14 @@ hangmanApp.controller('gameCtrl', [
         $scope.screen = 'won';
         $timeout(function () {
           newGame();
-        }, 2500);
+        }, 3500);
       }
 
       if ($scope.guesses == 0) {
         $scope.screen = 'lost';
         $timeout(function () {
           newGame();
-        }, 2000);
+        }, 3500);
       }
     };
     newGame();
