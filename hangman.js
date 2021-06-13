@@ -24,7 +24,7 @@ hangmanApp.controller('gameCtrl', [
       $scope.incorrectGuess = [];
       $scope.correctGuess = [];
       $scope.secretWord = '';
-      $scope.guesses = 6;
+      $scope.guesses = 5;
 
       $scope.msg = '';
 

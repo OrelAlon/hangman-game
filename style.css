@@ -45,3 +45,22 @@ img {
   background-repeat: no-repeat;
   /* background-size: cover; */
 }
+.left {
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(212, 63, 63);
+}
+
+button {
+  border-radius: 5px;
+  padding: 2px 5px;
+  border: solid burlywood 2px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(4px);
+}
